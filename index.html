@@ -2,30 +2,36 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-compatible" content="IE-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Snake Game</title>
 </head>
-<body> 
-    <div class="score">
-        score: <span class="score-value">00</span>
+<body>
+    <div class="game-header">
+        <div class="score">
+            Score: <span class="score-value">00</span>
+        </div>
+        <div class="high-score">
+            Recorde: <span class="high-score-value">0</span>
+        </div>
     </div>
+
     <div class="menu-screen">
         <span class="game-over">game over</span>
-        <span class="final-score">score:<span>00</span></span>
-
+        <span class="final-score">Score: <span>00</span></span>
         <button class="btn-play">Jogar novamente</button>
     </div>
-    <canvas class="canvas" width="420" height="420"></canvas>
 
-    <div class="joistyck-buttons">
-        <div class="cima"><button class="btn-up">&uarr;</button></div>
-        <div class="lados">
+    <canvas class="canvas"></canvas>
+
+    <div class="joystick-buttons">
+        <button class="btn-up">&uarr;</button>
+        <div class="middle-buttons">
             <button class="btn-left">&larr;</button>
             <button class="btn-right">&rarr;</button>
         </div>
-        <div class="baixo"><button class="btn-down">&darr;</button></div>
+        <button class="btn-down">&darr;</button>
     </div>
 
     <script src="./js/script.js"></script>
